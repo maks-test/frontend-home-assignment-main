@@ -10,6 +10,9 @@ const data = JSON.parse(fs.readFileSync(pathToUpperBarFile));
 
 app.get('/api/v1/tree', (_, res) => {
   setTimeout(() => {
+    res.header({
+      'Access-Control-Allow-Origin': '*',
+    });
     res.json(data);
   }, 300);
 });
