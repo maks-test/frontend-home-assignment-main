@@ -11,3 +11,115 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html, body, #root, .default-layout {
+  height: 100%;
+}
+
+.default-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  padding: 0 20px;
+  border: 2px solid #000;
+}
+
+.main-area {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  overflow: auto;
+  border: 2px solid #000;
+  border-top: none;
+}
+
+.sidebar {
+  display: flex;
+  min-width: 300px;
+  overflow-y: scroll;
+  padding: 20px 0;
+  border-right: 2px solid #000;
+}
+
+.fs-item-list {
+  padding: 0 20px;
+}
+
+.fs-item {
+  font-size: 18px;
+}
+
+.fs-item-label {
+  display: inline-block;
+  padding: 3px 1px;
+}
+
+.fs-item.selected > .fs-item-label {
+  background-color: #CCC;
+}
+
+.fs-item-gap {
+  display: inline-block;
+  width: 20px;
+}
+
+.fs-item > a, .fs-item > a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.fs-preview-items {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.fs-preview-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+  height: 80px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  color: #000;
+  text-decoration: none;
+}
+
+.folder-preview {
+  width: 80px;
+  height: 50px;
+  background-color: #999;
+}
+
+.file-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #000;
+  font-size: 20px;
+}
+
+.fs-preview-item > span {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
