@@ -83,4 +83,13 @@ Api will be available from your client on the same port on `/api/v1/tree`
 
 ## Your notes
 
-...
+* The provided app seemed to be not 100% ready to use (at least in my case):
+  * possibly package-lock.json was malformed – express wouldn't import in the server app
+  * front-end was "complaining" about "version": "2.0" in package.json, so I had to update it to match SemVer
+  * front-end app wouldn't compile without typescript so folks without this knowledge would need to search around
+  to disable typescript checks
+* I didn't figure out how to run back-end and front-end on the same port
+* In general I should say that the test task is pretty good to test the knowledge, I liked it. Not too easy,
+not too hard, and more than enough of space to show off skills.
+* I didn't count the time spent with timer, but I tried to keep it closer to 4 hours. I think that it was around
+5-6 though with all the accompanying routine (setting up separate github, etc).
